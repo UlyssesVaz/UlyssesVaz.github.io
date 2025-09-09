@@ -7,5 +7,5 @@ redirect_from:
   - /about.html
 ---
 
-Ulysses' personal websites
+Ulysses' personal website
 ======= 
