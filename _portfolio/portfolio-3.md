@@ -1,7 +1,6 @@
 ---
-title: "MVP of Personal AI assistant"
-excerpt: "[Front end](https://github.com/UlyssesVaz/redcoach-mobile), [backend](https://github.com/UlyssesVaz/CalorieCounter), and [product vision](https://docs.google.com/document/d/1yhttCcKP-fhFRfev5oHC0-cUzPfyGUMC4cYkycQTbOs/preview)
-Protopye a frontend mobile app powered by AI to help new fitness entrants build healthy sustainable habits towards their goals.
+title: "[Shopping website](https://github.com/UlyssesVaz/Senior-Year-Projects/blob/main/Shopping-App)"
+excerpt: "Managed a team of five others for a group project, creating a shopping app. Learned to break the project into smaller tasks to distribute workload while helping others understand the project scope and division."
 
 <br/><img src='/images/500x300.png'>"
 collection: portfolio
