@@ -7,6 +7,13 @@ redirect_from:
   - /resume
 ---
 
+
+{% raw %}
+<iframe src="https://docs.google.com/document/d/1WaYV2AK85APOz-kjVIzmKjjR7GAT5z0Xd5s-iIjLI38/preview" width="100%" height="900px"></iframe>
+{% endraw %}
+
+
+
 {% include base_path %}
 
 Education
