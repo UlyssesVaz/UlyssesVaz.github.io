@@ -1,12 +1,13 @@
 ---
 permalink: /
-title: "Hello from Ulysses Vazquez-Perez"
+title: "Hello World !"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
+Welcome to Ulysses' Site
 
 About Me:
 ======= 
