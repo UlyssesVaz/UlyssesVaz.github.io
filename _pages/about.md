@@ -1,13 +1,13 @@
 ---
 permalink: /
-title: "Hello World !"
+title: "Hello World!"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-Welcome to my Website
+Welcome to my website
 
 About Me:
 ======= 
