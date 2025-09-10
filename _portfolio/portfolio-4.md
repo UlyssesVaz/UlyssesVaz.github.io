@@ -1,6 +1,6 @@
 ---
-title: "[Todo Web App](https://github.com/UlyssesVaz/todo))"
-excerpt: ""Built a full-stack TODO app using Flask and SQLite. Helped me understand the nature of client-server architecture, HTTP protocols, and database persistence."
+title: "[Todo Web App](https://github.com/UlyssesVaz/todo)"
+excerpt: "Built a full-stack TODO app using Flask and SQLite. Helped me understand the nature of client-server architecture, HTTP protocols, and database persistence."
 
 <br/><img src='/images/500x300.png'>"
 collection: portfolio
