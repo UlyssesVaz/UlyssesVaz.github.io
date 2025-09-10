@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Welcome to Ulysses' Site
+Welcome to my Website
 
 About Me:
 ======= 
