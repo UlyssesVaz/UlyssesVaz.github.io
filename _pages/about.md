@@ -7,8 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-Education : M.S. in Information Systems (IS) | B.A. in Accounting & IS
-Previous work experience: Deloitte
 
 About Me:
 ======= 
