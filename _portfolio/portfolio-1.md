@@ -4,7 +4,7 @@ excerpt: "Built AI agents with Google’s ADK framework, learning the core patte
 Learned how agents use a central LLM to reason and orchestrate workflows, supported by sessions, memory, and runners for context recall.
 Also studied how callbacks help prevent agent injection and safeguard sensitive information.
 
-# <br/><img src='/images/google-adk.png'>"
+# <br/><img src='/images/agent-development-kit.png'>"
 collection: portfolio
 ---
 
