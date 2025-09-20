@@ -24,7 +24,7 @@ In the next 5–10 years, I see myself as a leader in a technology platform orga
 Skills
 ======= 
 Technology:
-I love turning ideas into working prototypes, blending code, data, and design.
+I love turning ideas into working prototypes, blending code, data, and design.\n
 **Tools & Focus Areas**: Python, SQL, AWS, APIs, Artificial Intelligence (AI), Tableau, Figma, cybersecurity fundamentals.
 
 Business
