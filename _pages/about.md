@@ -24,13 +24,13 @@ In the next 5–10 years, I see myself as a leader in a technology platform orga
 Skills
 ======= 
 Technology:
-I love turning ideas into working prototypes, blending code, data, and design.\n
+I love turning ideas into working prototypes, blending code, data, and design.  
 **Tools & Focus Areas**: Python, SQL, AWS, APIs, Artificial Intelligence (AI), Tableau, Figma, cybersecurity fundamentals.
 
 Business
-I explore how markets, products, and operations create sustainable value.
+I explore how markets, products, and operations create sustainable value.  
 **Focus Areas**: Market analysis, customer research, product strategy, revenue models, and process optimization.
 
 Leadership:
-I lead teams and projects with a focus on vision, communication, and execution.
+I lead teams and projects with a focus on vision, communication, and execution.  
 **Focus Areas**: Strategic thinking, stakeholder management, and storytelling.
