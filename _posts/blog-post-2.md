@@ -10,5 +10,5 @@ tags:
 ---
 
 [Read The Full Newsletter](https://ulysses-vazquez-newsletter.beehiiv.com/p/ulysses-newsletter-02)
-<iframe src="https://ulysses-vazquez-newsletter.beehiiv.com/p/ulysses-newsletter-01" width="100%" height="600px" style="border:none;"></iframe>
+<iframe src="https://ulysses-vazquez-newsletter.beehiiv.com/p/ulysses-newsletter-02" width="100%" height="600px" style="border:none;"></iframe>
 
