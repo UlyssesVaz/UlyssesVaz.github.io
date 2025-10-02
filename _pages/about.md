@@ -12,13 +12,11 @@ Welcome to my website
 About Me:
 ======= 
 
-I’m a Master’s student in Information Systems at the University of Washington, focusing on AI, machine learning, cloud computing, and data analytics. I bridge business and technology, combining my accounting background and an internship at Deloitte with hands-on project experience—from user research and prototyping to implementing AI solutions.
+I’m a Master’s student in Information Systems at the University of Washington, focusing on AI, machine learning, cloud computing, and data analytics. I bridge business and technology and have applied these skills in projects like an AI-powered fitness assistant. In that project, I identified areas of friction in daily life, conducted user research, and prototyped the app to help people develop sustainable health habits. It strengthened my ability to apply emerging technologies to real-world challenges while thinking strategically and leading with vision.
 
-I’ve built projects like an AI-powered fitness assistant and am currently exploring computer vision with real-world datasets. There, I scoped out areas of friction in my own life, took user research and protyped the app to help people develop sustainable health habits. This project strengthened my ability to apply emerging technologies to real-world challenges and lead with vision.
+Previously, I earned a bachelor’s in Accounting & Information Systems and interned at Deloitte in Audit & Assurance. There, I collaborated with clients across industries, which strengthened my communication, problem-solving, and ability to work with large datasets under tight deadlines.
 
-I’m looking for roles in product or business analysis where I can apply both technical and business insight. 
-Long-term, I aspire to grow into a technical leader who can inspire teams, shape strategy, and deliver meaningful solutions.
-
+I’m interested in product management or business analysis roles where I can combine technical and business insight. Ultimately, I aspire to grow into a technical leader who can inspire teams, shape strategy, and deliver meaningful solutions.
 
 Skills
 ======= 
