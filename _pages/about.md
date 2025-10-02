@@ -12,13 +12,12 @@ Welcome to my website
 About Me:
 ======= 
 
-My first presentation in elementary school was on Apple after the iPhone launch. Having just learned about ENIAC, I became fascinated by how quickly technology can open new opportunities and how business can deliver those opportunities to people. From that moment, I knew I wanted to work at the intersection of business and technology. 
+I’m a Master’s student in Information Systems at the University of Washington, focusing on AI, machine learning, cloud computing, and data analytics. I bridge business and technology, combining my accounting background and an internship at Deloitte with hands-on project experience—from user research and prototyping to implementing AI solutions.
 
-At the University of Washington, I interned at Deloitte, where I gained a high-level view of how organizations operate, including med-tech B2B subscription models for employee wellness. But I wanted to go beyond understanding businesses and start using them as vehicles to drive opportunity. That led me to add a double major in Information Systems my senior year and pursue an M.S. in Information Systems.
+I’ve built projects like an AI-powered fitness assistant and am currently exploring computer vision with real-world datasets. There, I scoped out areas of friction in my own life, took user research and protyped the app to help people develop sustainable health habits. This project strengthened my ability to apply emerging technologies to real-world challenges and lead with vision.
 
-There, I scoped out areas of friction in my own life and built an AI-powered fitness assistant app to help people develop sustainable health habits. This project strengthened my ability to apply emerging technologies to real-world challenges and lead with vision.
-
-In the next 5–10 years, I see myself as a leader in a technology platform organization, continuing to create opportunities that improve people’s lives.
+I’m looking for roles in product or business analysis where I can apply both technical and business insight. 
+Long-term, I aspire to grow into a technical leader who can inspire teams, shape strategy, and deliver meaningful solutions.
 
 
 Skills
