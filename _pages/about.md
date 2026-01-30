@@ -29,6 +29,6 @@ Business
 **Focus Areas**: Market analysis, customer research, product strategy, revenue models, and process optimization.
 
 Leadership:
-Inspiration
+Focus Areas: Strategic thinking, stakeholder management, and storytelling.
 I lead teams and projects with a focus on vision, communication, and execution.  
 **Focus Areas**: Strategic thinking, stakeholder management, and storytelling.
