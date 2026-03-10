@@ -12,6 +12,7 @@ const { title, summary, date } = data
 
 const demoUrl = collection === "projects" ? data.demoUrl : null
 const repoUrl = collection === "projects" ? data.repoUrl : null
+const image = collection === "projects" ? data.image : null
 ---
 
 <div>
@@ -44,7 +45,14 @@ const repoUrl = collection === "projects" ? data.repoUrl : null
   <div class="mt-1">
     {summary}
   </div>
-  {(demoUrl || repoUrl) && 
+  {image && (
+    <img
+      src={`/images/projects/${image}`}
+      alt={title}
+      class="mt-6 w-full rounded-lg object-cover max-h-72"
+    />
+  )}
+  {(demoUrl || repoUrl) &&
   <div class="mt-4 flex flex-wrap gap-2">
     {demoUrl && 
       <a href={demoUrl} target="_blank" class="group flex gap-2 items-center px-3 py-1.5 truncate rounded text-xs md:text-sm lg:text-base border border-black/25 dark:border-white/25 hover:bg-black/5 hover:dark:bg-white/15 blend">

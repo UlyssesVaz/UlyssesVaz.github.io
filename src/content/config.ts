@@ -7,6 +7,10 @@ const work = defineCollection({
     role: z.string(),
     dateStart: z.coerce.date(),
     dateEnd: z.union([z.coerce.date(), z.string()]),
+    // "professional" | "community" | "education"
+    // Controls grouping on the work page. Default: professional.
+    type: z.enum(["professional", "community", "education"]).default("professional"),
+    url: z.string().optional(),
   }),
 })
 
@@ -31,6 +35,8 @@ const projects = defineCollection({
     draft: z.boolean().optional(),
     demoUrl: z.string().optional(),
     repoUrl: z.string().optional(),
+    // Path relative to /public/images/projects/ e.g. "marvin.png"
+    image: z.string().optional(),
   }),
 })
 

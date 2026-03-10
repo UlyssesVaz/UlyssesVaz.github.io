@@ -1,15 +1,12 @@
 ---
 title: "MARVIN"
-summary: "Personal AI agent OS — CRM, memory, and automation for everyday life."
-date: "Jan 01 2026"
+summary: "Personal AI chief of staff: automation, memory, and daily briefings."
+date: "Feb 01 2026"
 draft: false
 tags:
 - AI
-- TypeScript
-- Supabase
 - Claude
+- Supabase
 ---
 
-MARVIN is my personal AI chief of staff. Module 1 is a relationship CRM — tracking 3,000+ contacts, logging interactions via Telegram, LinkedIn, and WhatsApp, and surfacing who I should reach out to. Each life area gets its own module.
-
-Built on Supabase, Claude, and a Chrome extension stack.
+MARVIN is my personal AI agent. It handles daily briefings, surfaces overdue contacts, runs a Telegram bot for CRM queries, and logs interactions from LinkedIn and WhatsApp. Built on Claude, Supabase, and a Chrome extension stack.

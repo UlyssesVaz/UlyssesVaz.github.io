@@ -1,8 +1,9 @@
 ---
-company: "Red Team"
-role: "Member"
-dateStart: "01/01/2024"
-dateEnd: "Present"
+company: "Unite UW Student Association"
+role: "Director of Event Management"
+dateStart: "09/01/2023"
+dateEnd: "07/31/2024"
+type: "community"
 ---
 
-Security research and red team operations.
+Enhanced cross-departmental collaboration by introducing a centralized communication system for event planning, ensuring clear progress tracking and reducing logistical delays by 20%.

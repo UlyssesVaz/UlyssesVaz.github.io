@@ -1,0 +1,99 @@
+---
+import PageLayout from "@layouts/PageLayout.astro"
+import TopLayout from "@layouts/TopLayout.astro"
+import BottomLayout from "@layouts/BottomLayout.astro"
+import { COMMUNITY } from "@consts"
+
+const spots = [
+  {
+    name: "AI House",
+    category: "Startups & VC",
+    href: "https://www.ai2incubator.com/ai-house",
+    tagline: "Founder pitches, VC panels, fireside chats. Seattle's startup scene in one room.",
+    great_for: "Understanding what's getting built and funded while connecting with the Seattle startup ecosystem.",
+    expect: "Technical founders, early-stage investors and networking.",
+  },
+  {
+    name: "SURF Incubator",
+    category: "Incubator & Coworking",
+    href: "https://www.surfincubator.com/",
+    tagline: "Public coworking Wednesdays at DocuSign Tower.",
+    great_for: "Show up and work on your own projects, startups or talk to people building their own. Pitch early ideas and get community feedback.",
+    expect: "Early-stage founders, solo builders, and encouragement.",
+    note: "SURF is an incubator, not an accelerator. Incubators give you resources and community at your own pace. Accelerators (YC, Techstars) take equity, run tight cohorts, and end in a demo day.",
+  },
+  {
+    name: "Out and About Walks",
+    category: "Community & Social",
+    href: "https://www.instagram.com/out.and.about.walks/",
+    tagline: "Walking around Seattle. Good mix of people.",
+    great_for: "Meeting the community for a walk in Seattle.",
+    expect: "Good conversations.",
+  },
+  {
+    name: "Seattle Creative Coworking Cafe",
+    category: "Creatives & Makers",
+    href: "https://www.tiktok.com/@thekcdiaries/video/7614285562035424543",
+    tagline: "Work for an hour, show what you made. Bimonthly at Stoup Brewing.",
+    great_for: "Creatives meeting, creating, then show and tell at the end.",
+    expect: "Creativity of every form: Photographers, writers, designers, musicians, entrepreneurs.",
+  },
+  {
+    name: "Red Team Association",
+    category: "Cybersecurity",
+    href: "https://redteamassociation.com/",
+    tagline: "Offensive security. Members teach what they actually work on.",
+    great_for: "Hands-on offensive security with people who do it professionally. Each session is run by a member on something they're currently working in.",
+    expect: "Monthly workshops, Hack Wednesdays, CTF competitions.",
+  },
+]
+---
+
+<PageLayout title={COMMUNITY.TITLE} description={COMMUNITY.DESCRIPTION}>
+  <TopLayout>
+    <h1 class="animate page-heading">
+      Seattle Community Guide
+    </h1>
+  </TopLayout>
+  <BottomLayout>
+    <div class="animate mb-8">
+      <p class="opacity-70">
+        A list of Seattle communities that promote connection and learning.
+      </p>
+    </div>
+    <ul>
+      {spots.map((spot) => (
+        <li class="animate border-b border-black/10 dark:border-white/25 mt-4 py-8 first-of-type:mt-0 first-of-type:pt-0 last-of-type:border-none">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-xs px-2 py-0.5 rounded-full border border-black/20 dark:border-white/20 text-black/60 dark:text-white/60">
+              {spot.category}
+            </span>
+          </div>
+          <h2 class="text-black dark:text-white font-semibold text-lg">
+            <a href={spot.href} target="_blank" rel="noopener noreferrer" class="hover:underline">
+              {spot.name}
+            </a>
+          </h2>
+          <div class="text-sm opacity-70 mt-1 mb-3 italic">
+            {spot.tagline}
+          </div>
+          <div class="space-y-2 text-sm">
+            <div>
+              <span class="font-medium text-black dark:text-white">Great for: </span>
+              <span class="opacity-70">{spot.great_for}</span>
+            </div>
+            <div>
+              <span class="font-medium text-black dark:text-white">What to expect: </span>
+              <span class="opacity-70">{spot.expect}</span>
+            </div>
+            {spot.note && (
+              <div class="mt-3 pl-3 border-l-2 border-black/15 dark:border-white/15">
+                <span class="opacity-50 text-xs">{spot.note}</span>
+              </div>
+            )}
+          </div>
+        </li>
+      ))}
+    </ul>
+  </BottomLayout>
+</PageLayout>

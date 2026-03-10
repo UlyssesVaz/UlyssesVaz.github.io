@@ -1,8 +1,9 @@
 ---
-company: "Deloitte"
-role: "Business Technology Analyst"
-dateStart: "06/01/2022"
-dateEnd: "08/31/2023"
+company: "Technology Consulting Association @ UW"
+role: "Technology Consultant"
+dateStart: "08/01/2025"
+dateEnd: "12/31/2025"
+type: "professional"
 ---
 
-Two stints in consulting, working across technology and business transformation engagements.
+Consulted with toastedseattle.com on a quarter-long engagement to reduce onboarding costs by $1,000 as the company scales past 3 stores. Pitched a Talent Learning Management System enabling compliance tracking and ad-hoc onboarding management, saving an additional $1,500.

@@ -2,7 +2,6 @@
 import { getCollection } from "astro:content"
 import PageLayout from "@layouts/PageLayout.astro"
 import ArrowCard from "@components/ArrowCard"
-import StackCard from "@components/StackCard.astro"
 import { SITE, SOCIALS } from "@consts"
 import TwinklingStars from "@components/TwinklingStars.astro"
 import MeteorShower from "@components/MeteorShower.astro"
@@ -16,39 +15,9 @@ const projects = (await getCollection("projects"))
   .filter(project => !project.data.draft)
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
   .slice(0,3)
-
-const stack = [
-  { 
-    text: "Astro", 
-    icon: "astro", 
-    href: "https://astro.build" 
-  },
-  { 
-    text: "Javascript", 
-    icon: "javascript", 
-    href: "https://www.javascript.com" 
-  },
-  { 
-    text: "Typescript", 
-    icon: "typescript", 
-    href: "https://www.typescriptlang.org" 
-  },
-  { 
-    text: "Tailwind", 
-    icon: "tailwind", 
-    href: "https://tailwindcss.com" 
-  },
-]
 ---
 
-<PageLayout title="Home" description={SITE.DESCRIPTION}>
-
-  <!-- Light Mode: Particles -->
-  <div class='absolute inset-0 block dark:hidden'>
-    <div id='particles1' class='fixed inset-0'></div>
-    <div id='particles2' class='fixed inset-0'></div>
-    <div id='particles3' class='fixed inset-0'></div>
-  </div>
+<PageLayout title={SITE.TITLE} description={SITE.DESCRIPTION}>
 
   <!-- Dark Theme: Stars -->
   <div class='absolute inset-0 bg-black hidden dark:block'>
@@ -57,7 +26,7 @@ const stack = [
     <div id='stars3' class='fixed inset-0'></div>
   </div>
 
-  <!-- Dark Theme: Twinkling Stars / Metors -->
+  <!-- Dark Theme: Twinkling Stars / Meteors -->
   <div id="galaxy" class="fixed inset-0">
     <div class="hidden dark:block">
       <TwinklingStars/>
@@ -66,37 +35,52 @@ const stack = [
   </div>
 
   <script is:inline src="/js/bg.js"></script>
-  
+
   <!-- HERO -->
   <section class="relative h-screen w-full">
-    <div id="planetcont" class='animate absolute inset-0 top-1/4 overflow-hidden'>
-      <div id="crescent" class='absolute top-0 left-1/2 -translate-x-1/2 w-[250vw] min-h-[100vh] aspect-square rounded-full p-[1px] bg-gradient-to-b from-black/25 dark:from-white/75 from-0% to-transparent to-5%'>
-        <div id="planet" class='w-full h-full bg-white dark:bg-black rounded-full p-[1px] overflow-hidden flex justify-center'>
-          <div id="blur" class='w-full h-20 rounded-full bg-neutral-900/25 dark:bg-white/25 blur-3xl'/>
-        </div>
-      </div>
-    </div>
     <div class="animate absolute h-full w-full flex items-center justify-center">
-      <div class='relative w-full h-full flex items-center justify-center'>
-        <div class='p-5 text-center'>
-          <p class='animated text-lg md:text-xl lg:text-2xl font-semibold opacity-75'>
-            Hello, I am ...
+      <div class="w-full max-w-screen-lg mx-auto px-8 flex flex-col md:flex-row items-center gap-10 md:gap-16">
+
+        <!-- Photo -->
+        <div class="flex-shrink-0 order-1 md:order-2">
+          <img
+            src="/images/profile.jpg"
+            alt="Ulysses Vazquez-Perez"
+            class="w-40 h-40 md:w-56 md:h-56 rounded-full object-cover object-top border border-black/10 dark:border-white/10"
+          />
+        </div>
+
+        <!-- Text -->
+        <div class="order-2 md:order-1 text-center md:text-left">
+          <p class="animated text-xs uppercase tracking-widest opacity-50 mb-3">
+            Seattle · Business · Technology
           </p>
-          <p class='animated text-2xl md:text-3xl lg:text-4xl font-bold uppercase text-black dark:text-white'>
-            Astro Sphere
+          <h1 class="animated text-4xl md:text-5xl lg:text-6xl font-bold text-black dark:text-white leading-tight">
+            Ulysses<br/>Vazquez-Perez
+          </h1>
+          <p class="animated mt-4 text-base md:text-lg opacity-70 max-w-md">
+            Business is the Vehicle of Innovation,<br/>Technology is the Driver of Innovation.
           </p>
-          <p class='animated text-sm md:text-base lg:text-lg opacity-75'>
-            Currently designing products for humans.
+          <p class="animated mt-2 text-xs opacity-40 tracking-wide max-w-md">
+            BA · Accounting & Information Systems · UW Foster School of Business · 2025
           </p>
-          <div id="ctaButtons" class='animated flex flex-wrap gap-4 justify-center mt-5'>
-            <a href='/blog' class='py-2 px-4 rounded truncate text-xs md:text-sm lg:text-base bg-black dark:bg-white text-white dark:text-black hover:opacity-75 blend'>
-              Read my blog
-            </a>
-            <a href='/work' class='py-2 px-4 truncate rounded text-xs md:text-sm lg:text-base border border-black/25 dark:border-white/25 hover:bg-black/5 hover:dark:bg-white/15 blend'>
+          <div class="animated flex flex-wrap gap-2 mt-5 justify-center md:justify-start">
+            {["Builder", "Strategist", "Community", "Seattle"].map(tag => (
+              <span class="px-3 py-1 text-xs rounded-full border border-black/20 dark:border-white/20 text-black/60 dark:text-white/60">
+                {tag}
+              </span>
+            ))}
+          </div>
+          <div id="ctaButtons" class="animated flex flex-wrap gap-4 justify-center md:justify-start mt-8">
+            <a href='/work' class='py-2 px-5 rounded-full text-sm bg-black dark:bg-white text-white dark:text-black hover:opacity-75 blend'>
               View my work
+            </a>
+            <a href='/blog' class='py-2 px-5 rounded-full text-sm border border-black/25 dark:border-white/25 hover:bg-black/5 hover:dark:bg-white/15 blend'>
+              Read my writing
             </a>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -107,71 +91,18 @@ const stack = [
       <!-- About Section -->
       <section class="animate">
         <article>
-          <p>I am a <b><i>software engineer</i></b>, <b><i>ui/ux designer</i></b>, <b><i>product planner</i></b>, <b><i>mentor</i></b>, <b><i>student</i></b>, <b><i>minimalist</i></b>, <b><i>eternal optimist</i></b>, <b><i>crypto enthusiast</i></b> and <b><i>sarcasm connoisseur</i></b>.</p>
-          <p>I love to both build and break things. I am motivated by challenging projects with self-guided research and dynamic problem solving. My true passion is crafting creative front end designs with unique takes on color, typography and motion.</p>
-          <p>During my career</p>
-          <p>I have built products ranging from marketing and ecommerce websites to complex enterprise apps with focus on delivering fast, elegant code along with delightful user interfaces.</p>
-          <p>Now</p>
-          <p>I currently work as a software engineer at StreamlineFS, where I do product planning, design and development.</p>
+          <p>UW Foster BA in Accounting and Information Systems. Working across the intersection of technology, business and community to integrate the needs of people, the possibilities of technology, and the requirements for business success.</p>
+          <p>2x Deloitte Internship · Technology Consulting Association · Walking Club Ambassador</p>
         </article>
-      </section>
-
-      <!-- Blog Preview Section -->
-      <section class="animate">
-        <div class="space-y-4">
-          <div class="flex justify-between">
-            <p class="font-semibold text-black dark:text-white">
-              Recent posts
-            </p>
-            <a href="/blog" class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
-              <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
-                All posts
-              </span>
-            </a>
-          </div>
-          <ul class="space-y-4">
-            {posts.map((post) => (
-              <li>
-                <ArrowCard entry={post} />
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      <!-- Tech Stack Section -->
-      <section class="animate">
-        <div class="space-y-4">
-          <p class="font-semibold text-black dark:text-white">
-            Website build with
-          </p>
-          <div class="flex flex-wrap items-center gap-2 mt-5">
-            {stack.map(item => (
-              <StackCard 
-                text={item.text}
-                icon={item.icon}
-                href={item.href}
-              />
-            ))}
-          </div>
-          <div>
-            Performing reactivity and statefulness, special guest
-            <a href="https://www.solidjs.com/" target="_blank" class="w-fit group underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
-              <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
-                SolidJS
-              </span>
-            </a>
-          </div>
-        </div>
       </section>
 
       <!-- Project Preview Section -->
       <section class="animate">
         <div class="space-y-4">
           <div class="flex justify-between">
-            <p class="font-semibold text-black dark:text-white">
+            <h2 class="font-semibold text-black dark:text-white">
               Recent projects
-            </p>
+            </h2>
             <a href="/projects" class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
               <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
                 All projects
@@ -188,14 +119,67 @@ const stack = [
         </div>
       </section>
 
+      <!-- Blog Preview Section -->
+      {posts.length > 0 && (
+        <section class="animate">
+          <div class="space-y-4">
+            <div class="flex justify-between">
+              <h2 class="font-semibold text-black dark:text-white">
+                Recent writing
+              </h2>
+              <a href="/blog" class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
+                <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
+                  All posts
+                </span>
+              </a>
+            </div>
+            <ul class="space-y-4">
+              {posts.map((post) => (
+                <li>
+                  <ArrowCard entry={post} />
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
+
+      <!-- FAQ Section -->
+      <section class="animate">
+        <div class="space-y-6">
+          <h2 class="font-semibold text-black dark:text-white">A few things people ask</h2>
+          <div class="space-y-5">
+            {[
+              {
+                q: "Is a business degree worth it for a tech career?",
+                a: "Depends what you want to do. I studied Accounting and Information Systems at UW Foster. Accounting teaches you how businesses actually work. IS teaches you how systems solve those problems. If you want to build technology for organizations rather than just build technology, that combination is hard to beat."
+              },
+              {
+                q: "How do you build high agency in your career?",
+                a: "Learn to solve your problems and then learn to communicate them. In doing you realize what is important to you."
+              },
+              {
+                q: "Do you need a CS degree to work in tech?",
+                a: "No. Since tech is just a movement and ever changing there is a need for every contributor in the system. If you want to learn how to build tech, it can be helpful as there are so many world systems that tech uses to be built out, but if you are able to use world systems to understand how tech is built that can be powerful too."
+              },
+            ].map(({ q, a }) => (
+              <div>
+                <h3 class="font-medium text-black dark:text-white">{q}</h3>
+                <p class="mt-1 opacity-70 text-sm">{a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <!-- Contact Section -->
       <section class="animate">
         <div>
-          <p class="font-semibold text-black dark:text-white">
+          <h2 class="font-semibold text-black dark:text-white">
             Let's Connect
-          </p>
+          </h2>
           <p>
-            Reach out to me via email or on social media.
+            Reach out via email or find me on social.
           </p>
           <div class="grid grid-cols-4 gap-y-2 mt-4 auto-cols-min">
             {SOCIALS.map(social => (
@@ -212,8 +196,10 @@ const stack = [
                 </a>
               </div>
             ))}
+          </div>
         </div>
       </section>
+
     </div>
   </div>
 </PageLayout>

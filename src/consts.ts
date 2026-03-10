@@ -3,31 +3,37 @@ import type { Site, Page, Links, Socials } from "@types"
 // Global
 export const SITE: Site = {
   TITLE: "Ulysses Vazquez-Perez",
-  DESCRIPTION: "Builder at the intersection of business, technology, and community. BA Accounting & Information Systems, University of Washington. Entrepreneurially inclined.",
+  DESCRIPTION: "Ulysses Vazquez-Perez — Seattle. Accounting & Information Systems, UW Foster. Deloitte. Building AI tools and working at the intersection of business operations and technology.",
   AUTHOR: "Ulysses Vazquez-Perez",
 }
 
 // Work Page
 export const WORK: Page = {
-  TITLE: "Work",
-  DESCRIPTION: "Experience across consulting, startups, and community.",
+  TITLE: "Work & Experience | Ulysses Vazquez-Perez",
+  DESCRIPTION: "Professional experience in consulting, business operations, and technology.",
 }
 
 // Blog Page
 export const BLOG: Page = {
-  TITLE: "Writing",
-  DESCRIPTION: "Thoughts on business, technology, AI, and community.",
+  TITLE: "Writing | Ulysses Vazquez-Perez",
+  DESCRIPTION: "Thoughts on business, technology, AI, and building a high-agency career.",
 }
 
 // Projects Page
 export const PROJECTS: Page = {
-  TITLE: "Projects",
-  DESCRIPTION: "Things I have built — from AI tools to App Store apps.",
+  TITLE: "Projects | Ulysses Vazquez-Perez",
+  DESCRIPTION: "Things I have built: from AI tools to App Store apps.",
+}
+
+// Community Page
+export const COMMUNITY: Page = {
+  TITLE: "Seattle Community Guide | Ulysses Vazquez-Perez",
+  DESCRIPTION: "A guide to Seattle communities worth showing up to: SURF Incubator, AI House, Red Team Association, Out and About Walks, and more.",
 }
 
 // Search Page
 export const SEARCH: Page = {
-  TITLE: "Search",
+  TITLE: "Search | Ulysses Vazquez-Perez",
   DESCRIPTION: "Search all posts and projects by keyword.",
 }
 
@@ -50,8 +56,8 @@ export const LINKS: Links = [
     HREF: "/blog",
   },
   {
-    TEXT: "Connect",
-    HREF: "/connect",
+    TEXT: "Community",
+    HREF: "/community",
   },
 ]
 
@@ -82,4 +88,3 @@ export const SOCIALS: Socials = [
     HREF: "https://www.instagram.com/ulysses.curate/",
   },
 ]
-

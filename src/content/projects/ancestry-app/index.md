@@ -1,12 +1,12 @@
 ---
-title: "Ancestry iOS App"
-summary: "Family tree builder published to the App Store."
-date: "Jun 01 2023"
+title: "Family Tree App"
+summary: "Native iOS app for building and exploring family trees. Published to the App Store."
+date: "Jan 22 2026"
 draft: false
 tags:
-- Swift
 - iOS
-- App Store
+- TypeScript
+repoUrl: "https://github.com/UlyssesVaz/familyTree"
 ---
 
 A native iOS app for building and exploring family trees. Published to the App Store.
