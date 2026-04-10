@@ -1,0 +1,37 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "command": "bash .claude/hooks/on-stop.sh",
+            "type": "command"
+          }
+        ],
+        "matcher": ""
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "command": "export PATH=\"$PATH:/c/Users/Ulyss/AppData/Local/Programs/bd\" && export BEADS_DIR=/c/Users/Ulyss/Documents/marvin/.beads && bd prime 2>/dev/null || true",
+            "type": "command"
+          }
+        ],
+        "matcher": ""
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "command": "export PATH=\"$PATH:/c/Users/Ulyss/AppData/Local/Programs/bd\" && export BEADS_DIR=/c/Users/Ulyss/Documents/marvin/.beads && if ! bd ready >/dev/null 2>&1; then echo '{\"decision\":\"block\",\"reason\":\"bd is not reachable. Fix bd connectivity before starting. Check: is Dolt server running? Is BEADS_DIR correct? Run: bd doctor\"}'; exit 1; fi && bd prime 2>/dev/null",
+            "type": "command"
+          }
+        ],
+        "matcher": ""
+      }
+    ]
+  }
+}
